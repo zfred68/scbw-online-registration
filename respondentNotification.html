@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+ <p style="font-size:80%">This automatic message was sent to you via the  <b>South Coast Bushwalkers Club</b> on-line Registration.
+<br>
+<?= notice ?></p>
+  <p> Hi<br>
+   Thankyou for registering to become a member
+   <br>
+
+   Please reply to this email or click below to confirm your email address.
+   <br>
+
+   You will receive a further email once your payment is confirmed, and we will
+   post to your membership card to your postal address.
+
+   <br>
+   <div id="random">your number:<?= random_number ?>
+   </div>
+   <a href="mailto:<?= reply_email_url ?>">Click here</a>
+   </p>
+<hr>
+ <? for (var i = 0; i < paragraphs.length; i++) { ?>
+  <p><?= paragraphs[i] ?></p>
+<? } ?>
+  <br>
+   <p>
+   <br>
+   <b style="foreground-color:#004000;"><big>S</big>outh <big>C</big>oast <big>B</big>ush <big>W</big>alking Club (SCBW)</b><br>
+PO Box 102, Wollongong. NSW. 2520<br>
+
+<a href="http://www.southcoastbushwalkers.org.au/">SCBW website</a>
+<br>
+<a href="https://sites.google.com/site/southcoastbushwalkersgroup/">SCBW Group members website</a>
+<br>
+<a href="http://scbw-walks.blogspot.com.au">SCBW  walks blog</a>
+</p>
+   <br>
+  </body>
+</html>
+
+

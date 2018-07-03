@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<metaa http-equiv="Content-Security-Policy" content="default-src 'self' script-src http://www.southcoastbushwalkers.org.au https://sites.google.com">
+<style type='text/css'>
+
+/* For width 500px and larger: */
+@media screen and (min-width: 432px) {
+.title {
+  margin: 20px 0 0 0;
+  font-size: 34px;
+}
+
+#logo {
+    float: right;
+    max-width: 100%;
+    height:auto;
+    margin: 0 0 15px 15px;
+    padding: 2%;
+    border: 0px solid black;
+    background-color: transparent;
+}
+
+}
+@media screen and (max-width: 432px){
+.title {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+h3 {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+}
+
+#logo {
+    float: top
+    display:block;
+    width: 54px;
+    margin: 0 0 10px 1px;
+    padding: 6px;
+    border: 0px solid black;
+ }
+ }
+
+.ptext {
+	font-weight: bold;
+    border:1px solid red;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+bold {
+	font-weight: bold;
+    border:1px solid red;
+    display: inline;
+    white-space: nowrap;
+}
+
+b {
+    font-weight: bold;
+}
+
+red { color: red; display: inline;white-space: nowrap;}
+
+.underlinefield {
+ font-family: "Courier New";
+ font-size: 15px;
+ font-weight: bold;
+ padding: 1px 1px;
+ background-color: transparent;
+ border-style: solid;
+ border-width: 0px 0px 2px 0px;
+ border-color: green
+}
+.underlinefield:focus {border-style: solid;  border-color: red;}
+
+.entryname
+{
+	font-family: "Courier New";
+    font-size: 15px;
+    font-weight: bold;
+	letter-spacing: 0pt;
+	text-transform: capitalize;
+	word-spacing: 2pt;
+}.underlinefield
+
+@media print{
+	#noprint { display:none;
+	background-color: yellow;
+	}
+}
+#noprint {
+	background-color: lightyellow;
+}
+.warning-bar-content {
+ display:none;
+}
+
+#rego-frame {
+  margin-top: -10px;
+}
+</style>
+
+<HEAD>
+<TITLE></TITLE>
+<TITLE>South Coast Bush Walking Club Inc. membership application form</TITLE>
+	<script type="text/javascript" src="https://sites.google.com/site/southcoastbushwalkers/web/js/ckextras.js"></script>
+
+    <script type="text/javascript" >
+     var total=0;
+     var fee=0;
+     var merchandise_total=0;
+     var merchandise_addition=0;
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://sites.google.com/site/southcoastbushwalkers/web/js/jquery/jquery-ui.custom.min.js"></script>
+</HEAD>
+
+<BODY onload="start()">
+<div id="rego-frame">
+<div>
+<div id="logo">
+<img src="https://sites.google.com/site/southcoastbushwalkers/web/images-2/scbw-logo.png?attredirects=0" >
+</div>
+
+<div class="title">The South Coast Bush Walking Club Inc.</div>
+
+<a href="http://www.southcoastbushwalkingclub.org.au">http://www.southcoastbushwalkingclub.org.au</a>
+<h2>Membership Application Form</h2>
+</div>
+
+<h3>Renewal</h3>
+<p>Your membership fees are due by 1 January of current year</p>
+<h3>New Member</h3>
+<p>Join at any time in the calendar year. If you join in the last quarter, the club at its discretion
+will deem you membership for the full next calendar year, so there is no need to hesitate joining late and
+expecting less value of your membership.
+</p>
+
+<p>Fill in the following form and submit</p>
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<FORM name="scbw_membership_application_form" id="scbw_membership_application_form" method="post">
+
+<INPUT TYPE="RADIO" NAME="Radio_MemberAction" id="Radio_MemberAction" VALUE="MemberRenewal" CHECKED="CHECKED">Membership Renewal</input>
+<INPUT TYPE="RADIO" NAME="Radio_MemberAction" id="Radio_MemberAction" VALUE="MemberNew" CHECKED="CHECKED">New Member</input>
+<p>Name: <input class="entryname underlinefield" NAME="member_name"  id="member_name" type="text" placeholder="your full name" size="34" required /></p>
+
+<p>Address: <input class="underlinefield" NAME="member_address" id="member_address" type="text" placeholder="address" size="34" required /></p>
+<p>Suburb: <input class="entryname underlinefield" NAME="member_suburb" id="member_suburb" type="text" placeholder="suburb" size="34" required /></p>
+<p>PostCode:<input class="underlinefield"  type="text" pattern="[0-9]{4}" maxlength="4"  NAME="member_postcode" id="member_postcode" type=text placeholder="postcode" size=4 required /></p>
+<p>Telephone: <input class="underlinefield" NAME="member_phone" id="member_phone" type="tel"  placeholder="home phone no." size="34" /></p>
+<p>Mobile: <input class="underlinefield" NAME="member_mobile" id="member_mobile" type="tel" placeholder="mobile phone no." size="34"></p>
+<p>Email: <input class="underlinefield" type="email" name="member_email" id="member_email" type="text" placeholder="email address" size="34" required /></p>
+<p>Emergency Contact Name: <input class="entryname underlinefield" NAME="member_emergency_contact" id="member_emergency_contact" type="text" placeholder="emergency contact" size="34" /></p>
+<p>Emergency Contact Phone:  <input class="underlinefield" NAME="member_emergency_contact_phone" type="tel" id="member_emergency_contact_phone" type="tel" placeholder="emergency contact phone" size="34" /></p>
+<h3>First Aid Qualifications:</h3><p>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-none" CHECKED="CHECKED">None</input><br>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-cpr"   >CPR</input><br>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-SFA"   >Senior First Aid</input><br>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-RAFA"  >Remote Area First Aid</input><br>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-xpire" >Expired Certificate</input><br>
+<INPUT TYPE="RADIO" NAME="Radio_FAid" VALUE="FAid-other" >Other</input><br>
+</p>
+<h3>Membership Category Payments</h3>
+<TABLE WIDTH="80%" BORDER="0" CELLSPACING="0">
+<TR>
+<TD>&nbsp;<INPUT class="ptext" TYPE="RADIO" NAME="Radio_member_category" VALUE="Paym-full" CHECKED="CHECKED" size="164" ONCLICK="javascript:pay('full');"><b>Full and Prospective Membership Application</b></input></TD>
+<TD>&nbsp;$30</TD>
+</TR>
+<TR>
+<TD>&nbsp;<INPUT TYPE="RADIO" NAME="Radio_member_category" VALUE="Paym-assoc" ONCLICK="javascript:pay('assoc');"><b>Associated Member</b>* Please check re affiliation and reciprocal agreement</input></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>&nbsp;&nbsp;Name of Affilliated Club where you have full membership: <input class="entryname underlinefield" id="member_assoc_club_name" type="text" placeholder="affiliated club name" size="34"></input></TD>
+<TD>&nbsp;$15</TD>
+</TR>
+<TR>
+<TD>&nbsp;<INPUT TYPE="RADIO" NAME="Radio_member_category" VALUE="Paym-student" ONCLICK="javascript:pay('student');"><b>Student Member</b> – copy of Student ID required</input></TD>
+<TD>&nbsp;$20</TD>
+</TR>
+<TR>
+</TR>
+<TR>
+<TD>&nbsp;Additional club merchandise</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>&nbsp;<INPUT TYPE="CHECKBOX" NAME="Chk_clubBadge" ID="Chk_clubBadge"  size="164" ONCLICK="javascript:addMerchant('badge');"/>Club Badge (cloth)  </INPUT></TD>
+<TD>&nbsp;$6</TD>
+</TR>
+<TR>
+<TD>&nbsp;Total</TD>
+<TD>&nbsp;<b>$<span id="divtotal">0</span></b></TD>
+</TR>
+</TABLE>
+<h3>Payment Method:</h3>
+<p>
+<input TYPE="RADIO" NAME="Radio_PayMethod" VALUE="PAY_dd" CHECKED="CHECKED">**direct deposit</input><br>
+</p>
+<b>**Details needed to pay by Direct Bank Deposit or through an Internet Bank Transfer </b>
+<pre>
+Institution:      Illawarra Credit Union
+Account Name:     S/Coast Bushwalking Club Inc
+BSB:              802-249
+Account Number:   249094151
+NB:</pre> <red>Please put your name in the transaction so the Club can match up your name to the transaction</red>
+<br>
+<p>Reference: <input class="entryname underlinefield" NAME="member_bankref"  id="member_bankref" type="text" placeholder="optionally write your bank transaction reference text here" size="38"></p>
+<br>
+<p>If you do not manage your account using the internet, you can go to your bank branch to do the transaction over the counter</p>
+<br>
+<b>Prospective membership</b> needs to be obtained before participating in club activities. When your application is received; the current program will be emailed and a Membership Card plus receipt will be posted. Prospective membership lasts for 12 months from date of application and the first two Introductory Grade 4 activities need to be completed during this period. Please take your Walks Completion Form with you on these two walks and have it signed by the walk leader.  Once these are completed you will be a full member of the club.
+<br>
+<b>Associated Membership*</b>: for members of clubs affiliated with Bushwalking NSW and with whom we have a reciprocal agreement. Please check with the secretary on clubs currently affiliated.
+<br>
+<b>Welcome to the South Coast Bush Walking Club! Come along and meet fellow members!</b>
+<h2>File Attachments</h2>
+<p>Any file attachements you may select here from your computer's storage</p><br>
+<input type="file" id="member_fileinput" name="fileinput" onachange="javascript:addAttachment();" accept="image/*"/>
+<br>
+<div id="preview" style="display:none" >
+<div id="dumy">---------</div>
+</div>
+
+<h2>Risk Waiver</h2>
+In voluntarily participating in any activity of The South Coast Bush Walking Club Inc., I am aware that this may expose me to risk that could lead to injury, illness or death or to loss of or damage to my property.
+
+Those risks may include but are not limited to slippery and/or uneven surfaces, rocks being dislodged, falling at edges of cliffs or drops or elsewhere, risks associated with crossing creeks, hypothermia and heat exhaustion.
+
+To minimise these risks I will endeavour to ensure:
+<br>
+1. That any activity in which I participate is within my capabilities and that I am carrying food, water and equipment appropriate for the activity.
+<br>
+2. That I advise the activity leader if I am taking any medication or have any physical or other limitations that might affect my participation in the activity.
+<br>
+3. That I will make every effort to remain with the rest of the party during the activity and accept the instructions of the leader of the activity.
+<br>
+<h3>Sign this document by validating the following checks</h3>
+
+
+<INPUT TYPE="CHECKBOX" NAME="Chk_agree_1" ID="Chk_agree_1"  size="164" />I have read or heard and understand these requirements.</input>
+<br>
+<INPUT TYPE="CHECKBOX" NAME="Chk_agree_2" ID="Chk_agree_2"  size="164" />I have considered the risks before choosing to sign this form and I still wish to participate in the activities of The South Coast Bush Walking Club Inc.</input>
+<br>
+<INPUT TYPE="CHECKBOX" NAME="Chk_agree_3" ID="Chk_agree_3"  size="164" />I agree by signing this form to waive any claim for damages arising from this activity that I may have against the club, the leader or other participants in tort or contract.</input>
+<br>
+<input type="hidden" name="member_total" id="member_total" value=""></input>
+
+<div id="noprint">
+    <div id="recaptcha"><div id="html_element"></div>
+    </div>
+<INPUT TYPE="BUTTON" NAME="Submit1" ID="Submit1" VALUE="Apply for Membership" ONCLICK="javascript:submitForm(this.parentNode.parentNode);" ></INPUT>
+
+<INPUT TYPE="BUTTON" NAME="Print" ONCLICK="javascript:printForm(this.parentNode.parentNode);"   VALUE="Print form"></input>
+<!--
+<INPUT TYPE="BUTTON" NAME="Test3" ONCLICK="javascript:test3();"   VALUE="Test #3"></input>
+
+<INPUT TYPE="BUTTON" NAME="Test4" ONCLICK="javascript:test4();"   VALUE="Test #4"></input>
+-->
+<br>
+
+
+</FORM>
+
+
+<script  type="text/javascript" >
+
+var position={x:0, y:0};
+function myOnClick(e) {
+  position=getMouPosition(e);
+}
+
+function pay(product) {
+  if(product=='full') {
+    fee=30;
+  }
+  if(product=='assoc') {
+    fee=15;
+  }
+  if(product=='student') {
+    fee=20;
+  }
+  updateTotal();
+}
+
+function delayed() {
+  pay('full');
+}
+
+function start() {
+ initMouseClick(myOnClick);
+
+ setTimeout(delayed,1000);
+}
+
+
+function updateTotal() {
+  total=fee+merchandise_addition;
+  var r = document.getElementById('divtotal');
+  r.innerHTML  = total;
+  r = document.getElementById('member_total');
+  r.value = total;
+}
+
+function addMerchant(product) {
+  var el = document.getElementById('Chk_clubBadge');
+  if(product=='badge') {
+     if(el.checked) {
+       merchandise_addition+=+6;
+       updateTotal();
+     }else if(merchandise_addition>0) {
+         merchandise_addition += -6;
+         updateTotal();
+         merchandise_addition = 0;
+     }
+  }
+}
+
+
+//========= submitForm ============================================
+
+var attachedfile;
+var attachedfile_name;
+var attachedfile_contentType;
+var formData;
+
+function submitForm(frmData) {
+
+   frmData.Submit1.disabled=true;
+   var e = document.getElementById("scbw_membership_application_form");
+   if(checkAgreements(frmData) == false) {
+       frmData.Submit1.disabled=false;
+       return;
+   }
+   if(checkFilledForm(frmData)===false) {
+        frmData.Submit1.disabled=false;
+       return;
+   }
+
+   verifyNoRobot();
+}
+
+function submitForm2Svc() {
+//google.script.run.withSuccessHandler(membersubmit).processForm(here);
+
+ //google.script.run.withSuccessHandler(membersubmit).withUserObject(this).processForm(here);  .withUserObject(here)
+  // the HTML form submit only transmits form values for each input name
+  // therefor to preserve all info to send .....
+  var formdata = getInputElements("scbw_membership_application_form");
+
+ // console.log(formdata);
+ msgmsg("processing.....please wait");
+ google.script.run
+           .withSuccessHandler(membersubmit)
+           .withFailureHandler(memberFail)
+           .processForm(formdata,attachedfile);
+}
+//
+// ========= explicit recaptcha robot test =================
+//
+var verifyCaptcha = function(response) {
+       // alert(response);
+       google.script.run.withSuccessHandler(updateNoRobot)
+                        .withFailureHandler(capchaFail)
+                        .processreCaptcha(response);
+}
+
+function updateNoRobot(s) {
+  if(s==true) {
+    var f=document.getElementById('script_captcha');
+    if(f) f.remove();
+    var e=document.getElementById('recaptcha');   
+    if(e) e.remove();
+    
+    submitForm2Svc();   
+  }
+  else {
+    google.script.run.submitLog("I ROBOT");
+  }
+}
+
+function capchaFail(s) {
+  msgmsg("sorry fail: you are a robot. " +s);
+}
+
+
+var  onloadReCaptchaCallback = function() {
+       grecaptcha.render('html_element', {
+          'sitekey' : '6LcrfRUUAAAAAKKJgghzakYC_lpIRUOgbx2EkaYp',
+          'callback' : verifyCaptcha
+        });
+      };
+
+function verifyNoRobot() {
+ var r=document.getElementById('html_element');
+ r.style.visibility = "visible";
+ var f=document.getElementById('script_captcha');
+ if(f) f.remove();
+ var e=document.getElementById('recaptcha');
+ var script = document.createElement('script');
+    script.setAttribute('type', 'text/javascript');
+    script.setAttribute('src', "https://www.google.com/recaptcha/api.js?onload=onloadReCaptchaCallback&render=explicit");
+    script.setAttribute('async','defer');
+    script.setAttribute('id','script_captcha');
+    e.appendChild(script);    
+
+}
+
+//===========================================================================
+function membersubmit(msg) {
+   var pdfstring='non';
+   msgmsg("thankyou for submitting on-line membership,please check confirm email response: membersubmit");
+     
+   var r=document.getElementById('html_element');
+   r.style.visibility = "hidden";
+
+   //alert("thankyou for submitting ");
+}
+
+function memberFail(msg) {
+   msgmsg("failure occured in submittal, please try again." + msg);
+   $('#Submit1').disabled=false;
+}
+
+function memberFailMsg(message) {
+   msgmsg(message);
+}
+//====================================== =====================================
+//  return JSON of input elements of a form
+//
+function getInputElements(formId) {
+    var form = document.getElementById(formId);
+    if (form === null) {
+        return null;
+    }
+    elements = [];
+    ii= form.getElementsByTagName('input');
+    for(i=0;i<ii.length;i++) {
+    	var inp = ii[i];
+    	var inpj;
+    	if(inp.type=="text") {
+    	 inpj = {"name":elementdefname(inp),"type":inp.type,"value":inp.value};
+    	}else
+   	    if(inp.type=="email"){
+    	 inpj = {"name":elementdefname(inp),"type":inp.type,"value":inp.value};
+    	}
+    	else
+ 	  	if(inp.type=="tel"){
+    	 inpj = {"name":elementdefname(inp),"type":inp.type,"value":inp.value};
+    	}
+      else
+     	if(inp.type == "radio") {
+           var name = elementdefname(inp);
+    	   if( inresultArray(elements,name))
+    	     continue;
+
+    	   var val = $('input[name="'+name+'"]:checked').val();
+
+    	   inpj = {"name":name,"type":inp.type,"value":val,"checked":inp.checked};
+        }
+        else
+    	if(inp.type == "radio") {
+           var name = elementdefname(inp);
+    	   if( inresultArray(elements,name))
+    	      continue;
+
+    	    var val = $('input[name="'+name+'"]:checked').val();
+
+    	    inpj = {"name":name,"type":inp.type,"value":val,"checked":inp.checked};
+
+    	}else
+
+    	if(inp.type == "checkbox"){
+    	 inpj ={ "name":elementdefname(inp), "type":inp.type, "value":inp.value, "checked":inp.checked};
+    	}else
+        if(inp.type == "hidden"){
+         inpj ={ "name":elementdefname(inp), "type":inp.type, "value":inp.value};
+        }else
+        if(inp.type == "file"){
+         inpj ={ "name":elementdefname(inp), "type":inp.type, "value":inp.value};
+        }else
+        {
+    		continue;
+    	}
+    	elements.push(inpj);
+    }
+
+    var result = '{ "inputs":' + JSON.stringify(elements) + '}';
+
+    return result;
+}
+
+function inresultArray(a,name){
+   var i=0;
+   for (;a[i];i++) {
+    var b=a[i];
+    if(b.name==name)
+      return true;
+   }
+
+   return false;
+}
+
+function elementdefname(element) {
+	var r=element.name;
+	if(r == null || r == "" || typeof(r) == "undefined"){
+	  r=element.id;
+	}
+	return r;
+}
+
+
+//=============================================================
+//=============================================================
+
+var beforePrint = function() {
+    };
+
+    var afterPrint = function() {
+         var el = this.document.getElementById("noprint");
+      el.setAttribute('style',"display:block;");
+    };
+
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                beforePrint();
+            } else {
+                afterPrint();
+            }
+        });
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+
+//=================================================================
+function  printForm(frmData) {
+   var el = this.document.getElementById("noprint");
+   //el.innerHTML=window.frames[0].document.body.innerHTML; setTimeout(window.print, 1000);
+   //this.document.body.innerHTML=window.frames[0].document.body.innerHTML;
+   if(checkAgreements(frmData) == false) {
+       return;
+   }
+   if(checkFilledForm(frmData)===false) {
+       return;
+   }
+   el.setAttribute('style',"display:none;");
+   setTimeout(window.print, 200);
+
+}
+//=================================================================
+//check if browser supports file api and filereader features
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+//----
+
+  //watch for change on ther
+    $( "#member_fileinput" ).change(function() {
+        console.log("photo file has been chosen")
+        //grab the first image in the fileList
+        //in this example we are only loading one file.
+        console.log(this.files[0].size)
+        attachFile(this.files[0])
+
+    });
+
+
+function attachFile(file) {
+
+    var reader = new FileReader();
+    reader.onload = function(event){
+            var  theurl = event.target.result;
+            // blob stuff
+            var image = new Image();
+            image.width = 320;
+            image.src = theurl;
+            image.onload = function() {  // preview the image
+            // have to wait till it's loaded
+              var el = document.getElementById('preview');
+           	  var c = el.childNodes;
+
+      		  if(el.hasChildNodes()){
+				 var child = el.firstchild;
+			 	 el.replaceChild(image,c[1]);
+      		  }
+              el.style.visibility='visible';
+      		  el.style.display='block';
+           }
+    }
+    reader.onloadend = function(event) {
+         attachedfile =   event.target.result;
+    }
+    attachedfile_name = file.name;
+    attachedfile_contentType = firle.type;
+    var form = document.getElementById("scbw_membership_application_form");
+    var newinput;
+    newinput = document.createElement("input");
+    newinput.type = 'hidden';
+    newinput.name = 'attachedfile_name';
+    newinput.value = file.name; // put result from canvas into new hidden input
+    form.appendChild(newinput);
+    newinput = document.createElement("input");
+    newinput.type = 'hidden';
+    newinput.name = 'attachedfile_contentType';
+    newinput.value = file.type; // put result from canvas into new hidden input
+    form.appendChild(newinput);
+
+    //when the file is read it triggers the onload event above.
+    reader.readAsDataURL(file);
+
+}
+//----
+} else {
+  alert('Sorry, Attaching files is not fully supported in this browser.');
+}
+//=================================================================
+
+function selectAll() {
+	  var el = document.getElementById("printspan");
+      if(el==null) {
+        alert("no printspan ?");
+        return;
+      }
+      alert("selectAll el "+el.id);
+	  while(el.hasChildNodes()){
+			el.focus();
+            el.select();
+            el=el.childNodes[0];
+      }
+
+}
+
+
+function test3() {
+  var response= "<?= response_html ?>";
+
+  var pos=getMouPosition();
+  console.log('mouse:'+pos.x+','+pos.y);
+
+  //msgmsg("test3()");
+  //$.get(response,function(data, status){
+  //      alert("Data: " + data + "\nStatus: " + status);
+  //  });
+  //has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+  //
+
+  //var el = document.body;
+  //el.innerHTML = '<iframe src="' + response + '"></iframe>';
+
+
+  //window.open(response,"_parent");
+  //The frame attempting navigation is sandboxed, and is therefore disallowed from navigating its ancestors.
+
+  //window.open(response,"_self");
+  // works but doesn't place nice in a frame. opens whole window
+  //alert('wait');
+  google.script.run
+           .withSuccessHandler(responseSuccess)
+           .withFailureHandler(memberFail)
+           .registration_response();
+  //debugger;
+
+}
+
+function responseSuccess(msg) {
+  //alert('responseSuccess:'+msg);
+  var pos=getMouPosition();r
+  console.log('mouse:'+pos.x+','+pos.y);
+  msgmsg(msg);
+}
+
+function checkAgreements(theForm) {
+   if( $("#Chk_agree_1")[0].checked == true &&
+       $("#Chk_agree_2")[0].checked == true &&
+       $("#Chk_agree_3")[0].checked == true
+       ){
+       return true;
+  }else {
+     msgmsg("For this on-line registration you must sign all agreements","Membership agreements");
+     theForm.Chk_agree_1.focus();
+     return false;
+ }
+}
+
+function checkFilledForm(theForm) {
+
+   if($("#member_name").val()===""
+    || $("#member_address").val()===""
+    || $("#member_suburb").val()===""
+    || $("#member_postcode").val()===""
+    || $("#member_email").val()==="" ){
+
+      msgmsg("For this on-line registration you have failed to supply some information","Membership information");
+      return false;
+    }
+    return true;
+}
+
+// =====================================================
+function test4() {
+
+   var e = document.getElementById("warning");
+
+   debugger;
+
+}
+
+function test4a(a) {
+
+   var thefrm = this.parentNode;
+   debugger;
+   a=0;
+   u = "https://sites.google.com/site/southcoastbushwalkers/web/registration-response";
+   window.open(u,"_self");
+
+  google.script.url.getLocation(function(location) {
+    console.log(location.parameters);
+    console.log(location.hash);
+    });
+
+
+  google.script.run.withFailureHandler(memberFail).processFail(thefrm);
+
+}
+
+
+/**
+  * Inserts a div that contains an status message after a given element.
+  *
+  * @param {String} msg The status message to display.
+  * @param {Object} element The element after which to display the Status.
+  */
+function showStatus(msg, element) {
+         var div = $('<div>')
+             .attr('id', 'status')
+             .attr('class','error')
+             .text(msg);
+        $(element).after(div);
+}
+
+
+function agetInputElements(formId) {
+    var form = document.getElementById(formId);
+    if (form === null) {
+        return null;
+    }setLogSheet_
+    return form.getElementsByTagName('input');
+}
+
+</script>
+
+
+<script>
+$(document).ready( function(){
+$("#member_name,#member_address,#member_suburb,#member_emergency_contact").focusout(function(){
+  var str=$(this).val();
+  str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+    });
+  $(this).val(str);
+ });});
+
+ </script>
+
+
+<style type="text/css">
+/* One simple border definition */
+#my-popup-border { padding:20px; width:40%; margin:200px auto; color:#fff;	text-align: left;}
+#my-popup-border, #my-popup-border .sb-inner { background:#444 url("https://sites.google.com/site/southcoastbushwalkersgroup/resources-1/web-resources/images/grad.png") repeat-x; }
+
+#bubble-closebutton {
+    background: url("https://sites.google.com/site/southcoastbushwalkers/web/images-2/cal_imgset.png?attredirects=0&d=1") ;
+    cursor: pointer;
+    height: 13px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 14px;
+	background-color:#dd0000;
+}
+#msg_par {
+	display: block;
+	font-family: Arial;
+	font-size: 10pt;
+	-line-height: 1.1em;
+	color:#FFFFFF;
+	white-space: pre-wrap;
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+</style>
+
+<div id="content_popup" style="z-index: 480; width: 400px; left: 417px; top: 41px; visibility: hidden;">
+    <div id="my-popup-border" style="background-color:#424242;z-index: 881;position: absolute; width: 480px; left: 5px; top: 9px; visibility: hidden">
+		<h2 id="popup-header" style="margin: 0px 0px;padding:0px;">And</h2>
+		<h4 id="popup-sub-header" style="margin: 0px 0px;padding:0px;"></h4>
+      <pre id="msg_par">And .</pre>
+      <div id="bubble-closebutton" onclick="popupClose();"></div>
+	  <span id=":1tfooterleft" class="eb-actions-left">
+      </span>
+    </div>
+</div>
+
+
+<script>"image/jpeg"
+
+function popupClose(){
+	 var el=document.getElementById('my-popup-border');
+	 el.style.visibility="hidden";
+}
+
+function msgmsg(msg,opt) {
+    var pos=getMouPosition();
+    //console.log('msgmsg,mouse:'+pos.x+','+pos.y);
+
+	var bublehead = document.getElementById('popup-header');
+	bublehead.innerHTML = 'informational message';
+	var el=document.getElementById('msg_par');
+	el.innerHTML=msg;
+    var es = document.getElementById('popup-sub-header');
+    if(opt!=undefined) {
+      es.innerHTML = opt;
+      es.style.display="block";
+    } else {
+      es.style.display="none";
+    }
+	var bubble = document.getElementById('my-popup-border');
+    if(pos!=null) {
+		if(pos.x+bubble.clientWidth > pageWidth()) {
+	   	 pos.x = pageWidth()-bubble.clientWidth + "px";
+		}
+		bubble.style.left= pos.x + "px";
+        if(pos.y < bubble.clientHeight )
+            bubble.style.top = bubble.clientHeight+20 + "px";
+        else
+		  bubble.style.top= pos.y - bubble.clientHeight - 200 + "px";
+
+		bubble.style.position='absolute';
+	}
+
+	bubble.style.visibility='visible';
+}
+
+
+</script>
+
+</div>
+</BODY>
+
+</html>
+
+
+
